@@ -1,0 +1,7 @@
+http:
+  routers:
+    dashboard:
+      rule: Host(`dashboard.traefik.me`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))
+      service: api@internal
+
+

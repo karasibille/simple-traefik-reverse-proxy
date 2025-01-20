@@ -1,0 +1,20 @@
+entryPoints:
+  web:
+    address: :80
+  websecure:
+    address: :443
+
+api:
+  dashboard: true
+  insecure: false
+  debug: true
+
+accessLog: {}
+
+providers:
+  docker:
+    exposedByDefault: false
+
+  file:
+    directory: /etc/traefik/custom/
+    watch: true
